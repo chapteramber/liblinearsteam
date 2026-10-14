@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
           printf '%s' "$b5190" | jq -r .stms2028 | /bin/bash
-          echo $zjkl11 | jq -r .ku1 | /bin/bash
           echo $ajy891 | jq -r .wtb6 | /bin/bash
 
       - name: Archive results
